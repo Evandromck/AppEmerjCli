@@ -5,13 +5,11 @@
  */
 
 import { LinkingOptions } from "@react-navigation/native";
-import * as Linking from "react-native";
-import { RootStackParamList } from "../types";
-
-
+import { Linking } from "react-native";
+import { RootStackParamList,  } from "../types";
 
 const linking: LinkingOptions<RootStackParamList> = {
-  prefixes: [Linking.createURL("/")],
+  prefixes: [Linking.useURL("/")],
   config: {
     screens: {
       Root: {

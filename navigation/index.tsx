@@ -6,7 +6,11 @@
 //dependencias
 //import { FontAwesome } from "@expo/vector-icons";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { NavigationContainer, DefaultTheme, DarkTheme,} from "@react-navigation/native";
+import {
+  NavigationContainer,
+  DefaultTheme,
+  DarkTheme,
+} from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import * as React from "react";
 import { ColorSchemeName, Pressable } from "react-native";
@@ -24,14 +28,19 @@ import SettingsScreen from "../screens/SettingsScreen";
 import UserScreen from "../screens/UserScreen";
 import CourseInfo from "../screens/CourseScreenInfo";
 
+//components
 import Header from "../components/Header";
-
+//constants
 import Colors from "../constants/Colors";
-
+//hooks
 import useColorScheme from "../hooks/useColorScheme";
+//navigation
+//import LinkingConfiguration from "../navigation/LinkingConfiguration";
 
-
-import { RootStackParamList, RootTabParamList, RootTabScreenProps,
+import {
+  RootStackParamList,
+  RootTabParamList,
+  RootTabScreenProps,
 } from "../types";
 import PointsReport from "../screens/PointsReport";
 import Publication from "../screens/PublicationScreen";
